@@ -1,0 +1,16 @@
+---
+name: located-monad-logger
+version: "0.1"
+copyright: 2016 MailOnline
+license: BSD3
+
+github: MailOnline/located-monad-logger
+
+ghc-options: -Wall -O2
+dependencies:
+  - base
+  - monad-logger
+  - text
+
+library:
+  source-dirs: src

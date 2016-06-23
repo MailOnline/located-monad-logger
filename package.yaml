@@ -1,14 +1,25 @@
 ---
 name: located-monad-logger
-version: "0.1"
+version: 0.1.0.0
+synopsis: Location-aware logging without Template Haskell
+description: |
+  This library builds on monad-logger
+  to provide logging functions
+  with automatic source locations.
+
+  It does so using the GHC CallStack mechanism,
+  instead of Template Haskell.
+category: Logging
+author: Pavel Kogan
+maintainer: pkogan@gmail.com
 copyright: 2016 MailOnline
 license: BSD3
 
 github: MailOnline/located-monad-logger
 
-ghc-options: -Wall -O2
+ghc-options: -Wall
 dependencies:
-  - base
+  - base >=4.8.1 && <4.9
   - monad-logger
   - text
 

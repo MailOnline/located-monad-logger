@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE ImplicitParams #-}
 
 module Control.Monad.Logger.Located.Internal where
@@ -5,7 +6,9 @@ module Control.Monad.Logger.Located.Internal where
 import Control.Monad
 import Control.Monad.Logger
 import Data.Maybe
+#if !MIN_VERSION_base(4, 9, 0)
 import GHC.SrcLoc
+#endif
 import GHC.Stack
 
 logStack :: (?stk :: CallStack, MonadLogger m, ToLogStr msg)

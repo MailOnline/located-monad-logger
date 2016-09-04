@@ -19,7 +19,7 @@ github: MailOnline/located-monad-logger
 
 ghc-options: -Wall
 dependencies:
-  - base >=4.8.1 && <4.9
+  - base >=4.8.1 && <4.10
   - monad-logger
   - text
 

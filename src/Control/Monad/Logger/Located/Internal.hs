@@ -33,5 +33,7 @@ srcLocToLoc sl = Loc
     , loc_end = (srcLocEndLine sl, srcLocEndCol sl)
     }
 
+#if !MIN_VERSION_monad_logger(0, 3, 23)
 defaultLoc :: Loc
 defaultLoc = Loc "<unknown>" "<unknown>" "<unknown>" (0,0) (0,0)
+#endif

@@ -1,6 +1,6 @@
 ---
 name: located-monad-logger
-version: 0.1.0.0
+version: 0.1.1.0
 synopsis: Location-aware logging without Template Haskell
 description: |
   This library builds on monad-logger
